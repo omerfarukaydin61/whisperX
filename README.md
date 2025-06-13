@@ -58,6 +58,34 @@ pip install -r requirements.txt
 
 4. (Optional) If you want to download YouTube videos, you can use the [YoutubeDownloader](https://github.com/Tyrrrz/YoutubeDownloader.git) GUI as described above.
 
+## Optional: Add WhisperX as a Git Submodule
+
+If you want to add WhisperX as a git submodule (recommended for development):
+
+```bash
+git submodule add https://github.com/m-bain/whisperX.git whisperX
+git submodule update --init --recursive
+```
+
+If you clone this repository from your own GitHub, the `whisperX` folder will only be present if you (or someone else) has already added it and pushed it to the repo. Otherwise, you can always add it later with the above command.
+
+> **Note:** If you do not need to modify or develop WhisperX itself, you do not need to clone it manually. The code will work with the pip-installed version.
+
+## Optional: Add YoutubeDownloader as a Git Submodule
+
+If you want to add [YoutubeDownloader](https://github.com/Tyrrrz/YoutubeDownloader.git) as a git submodule (for convenient local access to the GUI or CLI):
+
+```bash
+git submodule add https://github.com/Tyrrrz/YoutubeDownloader.git YoutubeDownloader
+git submodule update --init --recursive
+```
+
+This will create a `YoutubeDownloader` folder in your project. You can then use the GUI or CLI directly from this folder to download YouTube videos as audio or video files.
+
+If you clone this repository from your own GitHub, the `YoutubeDownloader` folder will only be present if you (or someone else) has already added it and pushed it to the repo. Otherwise, you can always add it later with the above command.
+
+> **Note:** This step is optional. You can use any tool or method to obtain your audio/video file. YoutubeDownloader is provided for convenience.
+
 ## Notes
 - If you want to translate the subtitles, set `LANGUAGE` in `config.py` to the target language code (e.g., 'en' for English).
 - The pipeline uses GPU by default. Adjust `DEVICE` and `COMPUTE_TYPE` in `config.py` for your hardware.

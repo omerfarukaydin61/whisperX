@@ -10,7 +10,8 @@
 !requirements.txt
 
 !example-audio.mp3
-!subtitle-TR-exampl-audio.srt
+!subtitle-TR-example-audio.srt
 
 # Do not ignore the whisperX directory and its contents
 !whisperX/
+!YoutubeDownloader/

@@ -1,0 +1,16 @@
+# Ignore everything
+/*
+
+# But do not ignore these files at the root
+!.gitignore
+!config.py
+!README.md
+!main.py
+!util.py
+!requirements.txt
+
+!example-audio.mp3
+!subtitle-TR-exampl-audio.srt
+
+# Do not ignore the whisperX directory and its contents
+!whisperX/

@@ -1,0 +1,6 @@
+whisperx==3.3.4
+python-dotenv
+pandas
+torch 
+torchvision 
+torchaudio

@@ -1,3 +1,6 @@
 [submodule "whisperX"]
 	path = whisperX
 	url = https://github.com/m-bain/whisperX.git
+[submodule "YoutubeDownloader"]
+	path = YoutubeDownloader
+	url = https://github.com/Tyrrrz/YoutubeDownloader.git

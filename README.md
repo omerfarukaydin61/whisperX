@@ -86,6 +86,21 @@ If you clone this repository from your own GitHub, the `YoutubeDownloader` folde
 
 > **Note:** This step is optional. You can use any tool or method to obtain your audio/video file. YoutubeDownloader is provided for convenience.
 
+## Setting up HF_TOKEN (Hugging Face Token)
+
+Some features of WhisperX (such as speaker diarization) require a Hugging Face access token (HF_TOKEN). You can obtain a free token by following these steps:
+
+1. Go to [https://huggingface.co/join](https://huggingface.co/join) and create a free account (or log in if you already have one).
+2. Visit [https://huggingface.co/settings/tokens](https://huggingface.co/settings/tokens) and click "New token" to generate a new access token. You can use the default settings (read access is sufficient).
+3. Copy your token (it will look like `hf_ABc...`).
+4. Create a file named `.env` in the root of this repository (next to `config.py`). Add the following line to the file:
+
+```
+HF_TOKEN=hf_ABc...
+```
+
+5. Save the file. The code will automatically load this token from `.env` when running.
+
 ## Notes
 - If you want to translate the subtitles, set `LANGUAGE` in `config.py` to the target language code (e.g., 'en' for English).
 - The pipeline uses GPU by default. Adjust `DEVICE` and `COMPUTE_TYPE` in `config.py` for your hardware.
